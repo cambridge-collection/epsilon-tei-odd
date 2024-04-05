@@ -31,7 +31,7 @@ jobs:
           for odd_name in *.odd; do
             base_name="$(echo "$odd_name"| sed -E 's#\.[^.]*$##g')";
           # Expand versioning variables
-            java -DentityExpansionLimit=9000000 -jar $GITHUB_WORKSPACE/saxon-he-12.1.jar -xi:on -o:$GITHUB_WORKSPACE/${base_name}-expanded.odd "${odd_name}" ${GITHUB_WORKSPACE}/main/.github/xslt/expandVars.xsl GITHUB_REF_NAME="${{ github.ref.name }}" GITHUB_SHA="${{ github.sha }}" DATE_STR=${{env.DATE_STR}
+            java -DentityExpansionLimit=9000000 -jar $GITHUB_WORKSPACE/saxon-he-12.1.jar -xi:on -o:$GITHUB_WORKSPACE/${base_name}-expanded.odd "${odd_name}" ${GITHUB_WORKSPACE}/main/.github/xslt/expandVars.xsl GITHUB_REF_NAME="${{ github.ref.name }}" GITHUB_SHA="${{ github.sha }}" DATE_STR=${{env.DATE_STR}}
           # Create FULL ODD
             java -DentityExpansionLimit=9000000 -jar $GITHUB_WORKSPACE/saxon-he-12.1.jar -xi:on -o:$GITHUB_WORKSPACE/${base_name}-full.odd "$GITHUB_WORKSPACE/${base_name}-expanded.odd" $GITHUB_WORKSPACE/tei/odds/odd2odd.xsl
           # Create RNG
