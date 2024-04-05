@@ -10,11 +10,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           path: main
       - name: Checkout TEI Stylesheets
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           repository: TEIC/Stylesheets
           path: ./tei
