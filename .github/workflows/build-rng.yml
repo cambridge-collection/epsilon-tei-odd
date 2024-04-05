@@ -36,4 +36,4 @@ jobs:
           git config --global user.name 'ODD Bot'
           git config --global user.email '<>'
           git add ../rng/*.rng ../documentation/*.html
-          git diff-index --quiet HEAD || (git commit -am "Workflow: Generate RelaxNG schemata and documentation" && git push)
+          git diff-index --quiet HEAD || (git commit -am "ci(build): generate rng and documentation" && git push)
