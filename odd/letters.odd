@@ -32,12 +32,15 @@
             <docAuthor>Epsilon Project</docAuthor>
             <docTitle>
                <titlePart>
-                  <title type="sub">TEI Transcription Guidelines </title></titlePart>
+                  <title type="sub">TEI Transcription Guidelines</title>
+               </titlePart>
+               <titlePart>
+                  <title type="desc"><?insert GITHUB_REF_NAME?></title>
+               </titlePart>
+               <titlePart>
+                  <title type="desc">Last updated on <?insert DATE_STR?>, revision <?insert GITHUB_SHA?></title>
+               </titlePart>
             </docTitle>
-            <byline rend="large"><?insert GITHUB_REF_NAME?></byline>
-            
-            <note place="inline" rend="small">Last updated on
-               <?insert DATE_STR?>, revision <?insert GITHUB_SHA?></note>
          </titlePage>
       </front>
       <body>
