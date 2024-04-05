@@ -3,9 +3,12 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Epsilon Project ODD</title>
-            <author>Michael Hawkins</author>
+            <title>Epsilon TEI Guidelines (<?insert GITHUB_REF_NAME?>)</title>
          </titleStmt>
+         <editionStmt>
+            <edition>Last updated on
+               <?insert DATE_STR?>, revision <?insert GITHUB_SHA?></edition>
+         </editionStmt>
          <publicationStmt>
             <publisher>Darwin Correspondence Project</publisher>
             <pubPlace>Cambridge</pubPlace>
