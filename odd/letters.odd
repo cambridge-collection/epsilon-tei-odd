@@ -3,16 +3,9 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Epsilon TEI Guidelines (<?insert GITHUB_REF_NAME?>)</title>
+            <title>Epsilon TEI Guidelines</title>
          </titleStmt>
-         <editionStmt>
-            <edition>Last updated on
-               <?insert DATE_STR?>, revision <?insert GITHUB_SHA?></edition>
-         </editionStmt>
          <publicationStmt>
-            <publisher>Darwin Correspondence Project</publisher>
-            <pubPlace>Cambridge</pubPlace>
-            <date when="2022">2022</date>
             <availability status="free">
                <licence target="http://creativecommons.org/licenses/by-sa/3.0/"> Distributed under a Creative Commons Attribution-ShareAlike 3.0 Unported License </licence>
                <licence target="http://www.opensource.org/licenses/BSD-2-Clause">
@@ -34,6 +27,19 @@
       </fileDesc>
    </teiHeader>
    <text>
+      <front xml:id="FM">
+         <titlePage>
+            <docAuthor>Epsilon Project</docAuthor>
+            <docTitle>
+               <titlePart>
+                  <title type="sub">TEI Transcription Guidelines </title></titlePart>
+            </docTitle>
+            <byline rend="large"><?insert GITHUB_REF_NAME?></byline>
+            
+            <note place="inline" rend="small">Last updated on
+               <?insert DATE_STR?>, revision <?insert GITHUB_SHA?></note>
+         </titlePage>
+      </front>
       <body>
          <schemaSpec ident="tei_math" prefix="tei_" start="TEI" defaultExceptions="http://www.tei-c.org/ns/1.0 http://www.w3.org/1998/Math/MathML http://www.w3.org/1999/xhtml teix:egXML">
             <moduleRef url="https://www.tei-c.org/release/xml/tei/Exemplars/mathml2-main.rng"/>
