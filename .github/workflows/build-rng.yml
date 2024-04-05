@@ -18,9 +18,6 @@ jobs:
         with:
           repository: TEIC/Stylesheets
           path: ./tei
-      - name: Set date
-        run: |
-          echo "::set-env name=DATE_STR::$(date +'%-d %B %Y')"
       - name: Update Schemata and Docs
         run: |
           wget "https://github.com/Saxonica/Saxon-HE/raw/main/12/Java/SaxonHE12-1J.zip"
@@ -31,7 +28,7 @@ jobs:
           for odd_name in *.odd; do
             base_name="$(echo "$odd_name"| sed -E 's#\.[^.]*$##g')";
           # Expand versioning variables
-            java -DentityExpansionLimit=9000000 -jar $GITHUB_WORKSPACE/saxon-he-12.1.jar -xi:on -o:$GITHUB_WORKSPACE/${base_name}-expanded.odd "${odd_name}" ${GITHUB_WORKSPACE}/main/.github/xslt/expandVars.xsl GITHUB_REF_NAME="${{ github.ref.name }}" GITHUB_SHA="${{ github.sha }}" DATE_STR=${{env.DATE_STR}}
+            java -DentityExpansionLimit=9000000 -jar $GITHUB_WORKSPACE/saxon-he-12.1.jar -xi:on -o:$GITHUB_WORKSPACE/${base_name}-expanded.odd "${odd_name}" ${GITHUB_WORKSPACE}/main/.github/xslt/expandVars.xsl GITHUB_REF_NAME="${{ github.ref.name }}" GITHUB_SHA="${{ github.sha }}" DATE_STR=$(git log -1 --format=%cd --date=format:"%-d %B %Y")
           # Create FULL ODD
             java -DentityExpansionLimit=9000000 -jar $GITHUB_WORKSPACE/saxon-he-12.1.jar -xi:on -o:$GITHUB_WORKSPACE/${base_name}-full.odd "$GITHUB_WORKSPACE/${base_name}-expanded.odd" $GITHUB_WORKSPACE/tei/odds/odd2odd.xsl
           # Create RNG
