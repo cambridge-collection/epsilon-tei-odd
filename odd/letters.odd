@@ -54,71 +54,150 @@
            
            <div>
                <head>Table of Contents</head>
-               <list>
-                   <item><ref target="#intro">Introduction</ref></item>
-                   <item><ref target="#schema">Schema, namespace and document root</ref></item>
-                   <item><ref target="#fileParts">Three main parts of each TEI file</ref>
-                       <list>
-                           <item><ref target="#teiHeader">teiHeader</ref><list>
-                               <item><ref target="#fileDesc">fileDesc</ref>
-                                   <list>
-                                       <item><ref target="#title">Title or To/from line</ref></item>
-                                       <item><ref target="#publicationStmt">Publication information</ref></item>
-                                       <item><ref target="#numbers">To find or change the calendar and log numbers</ref></item>
-                                       <item><ref target="#seriesStmt">To find or change the volume number</ref></item>
-                                       <item><ref target="#relatedItem">To indicate another version of a letter</ref></item>
-                                       <item><ref target="#physDesc">To find or change the physical description</ref></item>
-                                       <item><ref target="#endorsement">To add an endorsement</ref></item>
-                                       <item><ref target="#postmarks">Postmarks and datestamps</ref></item>
-                                       <item><ref target="#sourceDesc">The description of the source (sourceDesc)</ref></item>
-                                       <item><ref target="#provenance">To find or change the provenance</ref></item>
-                                       
-                                   </list></item>
-                               
-                               <item><ref target="#profileDesc">profileDesc</ref>
-                                   <list>
-                                       <item><ref target="#correspondent">To change the correspondent</ref></item>
-                                       <item><ref target="#altcorrespondent">Alternative correspondents</ref></item>
-                                       <item><ref target="#dates">Dates</ref></item>
-                                       <item><ref target="#summary">Summary</ref></item>
-                                   </list></item>
-                               <item><ref target="#revisionDesc">revisionDesc</ref>
-                                   <list>
-                                       <item><ref target="#puttingOnline">Put a letter online</ref></item>
-                                       <item><ref target="#newtext">Replace a letter text with a new one</ref></item>
-                                       <item><ref target="#cancelling">To cancel an entry</ref></item>
-                                   </list></item> 
-                           </list></item>
-                           <item><ref target="#facsimile">Facsimile</ref></item>
-                           <item><ref target="#editing">Editing the letter</ref>
-                               <list>
-                                   <item><ref target="#opener">Opener</ref></item>
-                                   <item><ref target="#address">Address</ref></item>
-                                   <item><ref target="#date">Date</ref></item>
-                                   <item><ref target="#supplemental">Salutation note/Sendname</ref></item>
-                                   <item><ref target="#salutation">Salutation</ref></item>
-                                   <item><ref target="#text">Letter body text</ref></item> 
-                                   <item><ref target="#footnoteRefs">Footnote markers</ref></item>
-                                   <item><ref target="#x-refs">Letter cross references</ref></item>
-                               </list></item>
-                       </list></item>
-                   
-                   <item><ref target="#list">Lists</ref></item>
-                   <item><ref target="#whitespace">Intentionally blank whitespace in the original document</ref></item>
-                   <item><ref target="#specialCharacters">Special characters</ref></item>
-                   <item><ref target="#mathematics">Mathematics, fractions and equations</ref></item>
-                   <item><ref target="#formatting">Character formatting</ref></item>
-                   <item><ref target="#diagrams">Diagrams and illustrations</ref></item>
-                   <item><ref target="#unclear">Unclear or damaged text</ref></item>
-                   <item><ref target="#enclosures">Enclosures</ref></item>
-                   <item><ref target="#dotnotes">Dot notes</ref></item>
-                   <item><ref target="#tnotes">Tnotes/MS alteration notes</ref></item>
-                   <item><ref target="#notes">Notes</ref></item>
-                   <item><ref target="#footnotes">Footnotes</ref></item>
-                   <item><ref target="#cdnotes">CD notes and annotations</ref></item>
-                   <item><ref target="#datesappendix">Appendix I: Dates</ref></item>
-                   <item><ref target="#tablesappendix">Appendix II: Tables</ref></item>
-               </list>
+               <p><list>
+                   <item>
+                       <ref target="#">Epsilon Project TEI Transcription Guidelines</ref>
+                   </item>
+                   <item>
+                       <ref target="#">Table of Contents</ref>
+                   </item>
+                   <item>
+                       <ref target="#intro">Introduction</ref>
+                   </item>
+                   <item>
+                       <ref target="#documentID">Filenames and Document IDs</ref>
+                   </item>
+                   <item>
+                       <ref target="#schema">The Epsilon Schema</ref>
+                   </item>
+                   <item>
+                       <ref target="#fileParts">The Main Parts of the Letter File</ref>
+                   </item>
+                   <item>
+                       <ref target="#teiHeader">teiHeader</ref>
+                   </item>
+                   <item>
+                       <ref target="#fileDesc">fileDesc</ref>
+                   </item>
+                   <item>
+                       <ref target="#titleStmt">The Title [REQ]</ref>
+                   </item>
+                   <item>
+                       <ref target="#publicationStmt">Publication information [REQ]</ref>
+                   </item>
+                   <item>
+                       <ref target="#postmarks">Postmarks and datestamps [OPT]</ref>
+                   </item>
+                   <item>
+                       <ref target="#endorsement">Endorsement [OPT]</ref>
+                   </item>
+                   <item>
+                       <ref target="#sourceDesc">The description of the source (<gi>sourceDesc</gi>) [REQ]</ref>
+                   </item>
+                   <item>
+                       <ref target="#provenance">Manuscripts</ref>
+                   </item>
+                   <item>
+                       <ref target="#printedSources">Printed Sources</ref>
+                   </item>
+                   <item>
+                       <ref target="#">Letters comprised from multiple sources</ref>
+                   </item>
+                   <item>
+                       <ref target="#profileDesc">profileDesc [REQ]</ref>
+                   </item>
+                   <item>
+                       <ref target="#correspondent">Recording Correspondence Information [REQ]</ref>
+                   </item>
+                   <item>
+                       <ref target="#altcorrespondent">Alternative Correspondents</ref>
+                   </item>
+                   <item>
+                       <ref target="#dates">Dates [REQ]</ref>
+                   </item>
+                   <item>
+                       <ref target="#summary">Summary of the letter [OPT]</ref>
+                   </item>
+                   <item>
+                       <ref target="#revisionDesc">Putting a Letter Online [REQ]</ref>
+                   </item>
+                   <item>
+                       <ref target="#editing">Editing the Letter Text</ref>
+                   </item>
+                   <item>
+                       <ref target="#opener">Opener [REC]</ref>
+                   </item>
+                   <item>
+                       <ref target="#address">Address [OPT]</ref>
+                   </item>
+                   <item>
+                       <ref target="#date">Date [OPT]</ref>
+                   </item>
+                   <item>
+                       <ref target="#supplemental">Salutation note/Sendname [OPT]</ref>
+                   </item>
+                   <item>
+                       <ref target="#salutation">Salutation</ref>
+                   </item>
+                   <item>
+                       <ref target="#text">Letter Body Text</ref>
+                   </item>
+                   <item>
+                       <ref target="#footnoteRefs">Footnote Markers</ref>
+                   </item>
+                   <item>
+                       <ref target="#x-refs">Letter and Person Cross References</ref>
+                   </item>
+                   <item>
+                       <ref target="#list">Lists</ref>
+                   </item>
+                   <item>
+                       <ref target="#whitespace">Intentionally Blank Whitespace in the Original Document</ref>
+                   </item>
+                   <item>
+                       <ref target="#specialCharacters">Special Characters</ref>
+                   </item>
+                   <item>
+                       <ref target="#mathematics">Mathematics, Fractions, and Equations</ref>
+                   </item>
+                   <item>
+                       <ref target="#formatting">Character Formatting</ref>
+                   </item>
+                   <item>
+                       <ref target="#diagrams">Diagrams and Illustrations</ref>
+                   </item>
+                   <item>
+                       <ref target="#enclosures">Enclosures [OPT]</ref>
+                   </item>
+                   <item>
+                       <ref target="#footnotes">Footnotes</ref>
+                   </item>
+                   <item>
+                       <ref target="#datesappendix">Appendix I: Correspondence Dates</ref>
+                   </item>
+                   <item>
+                       <ref target="#">a) Encoding the Natural-Language Date Text</ref>
+                   </item>
+                   <item>
+                       <ref target="#">b) ISO Date Attributes: <att>when</att>, <att>notBefore</att>, <att>notAfter</att>
+                       </ref>
+                   </item>
+                   <item>
+                       <ref target="#">c) Multiple or Mutually Exclusive Dates</ref>
+                   </item>
+                   <item>
+                       <ref target="#">d) Complex Dates and Help</ref>
+                   </item>
+                   <item>
+                       <ref target="#tablesappendix">Appendix II: Tables</ref>
+                   </item>
+                   <item>
+                       <ref target="#">Stretchy Brackets in Tables</ref>
+                   </item>
+                   <item>
+                       <ref target="#">Borders and Vertical Alignment</ref>
+                   </item>
+               </list></p>
            </div>
            <div>
                <head xml:id="intro">Introduction</head>
@@ -157,6 +236,18 @@
                     comments highlighting where you need to update content.</p>
            </div>
            <div>
+               <head xml:id="documentID">Filenames and Document IDs</head> 
+               <p>Every Epsilon letter file requires a unique document ID to distinguish it from
+                   every other letter in the collection. We recommend including a shortened form of
+                   the collection's name in the ID. For instance, if transcribing letters of Mary
+                   Anning, suitable IDs might be: ‘<val>ANNING-LETTER-1</val>’,
+                   ‘<val>ANNING-LETTER-2</val>’, etc. The files should have the same base name
+                   as their ID value, <hi rend="italic">e.g.</hi> ‘<val>ANNING-LETTER-1.xml</val>’,
+                   ‘<val>ANNING-LETTER-2.xml</val>’, and so forth. </p>
+               <p>The document's ID is recorded on the <gi>TEI</gi> element’s <att>xml:id</att>
+                   attribute, like this: <tag>TEI xml:id="ANNING-LETTER-1"</tag>.</p> 
+           </div>
+           <div>
                <head xml:id="schema">The Epsilon Schema</head>
                <p>The Text Encoding Initiative Guidelines are extensive and contain many elements
                     that are unnecessary or irrelevant for letter transcriptions used in Epsilon.
@@ -183,18 +274,7 @@
                </list>
            </div>
            
-           <div>
-               <head xml:id="documentID">Filenames and Document IDs</head> 
-               <p>Every Epsilon letter file requires a unique document ID to distinguish it from
-                    every other letter in the collection. We recommend including a shortened form of
-                    the collection's name in the ID. For instance, if transcribing letters of Mary
-                    Anning, suitable IDs might be: ‘<val>ANNING-LETTER-1</val>’,
-                        ‘<val>ANNING-LETTER-2</val>’, etc. The files should have the same base name
-                    as their ID value, <hi rend="italic">e.g.</hi> ‘<val>ANNING-LETTER-1.xml</val>’,
-                        ‘<val>ANNING-LETTER-2.xml</val>’, and so forth. </p>
-                <p>The document's ID is recorded on the <gi>TEI</gi> element’s <att>xml:id</att>
-                    attribute, like this: <tag>TEI xml:id="ANNING-LETTER-1"</tag>.</p> 
-           </div>
+           
 
            <div>
                <head xml:id="teiHeader">teiHeader</head>
@@ -215,28 +295,28 @@
                             Epsilon does not use this element directly, you have flexibility in
                             choosing the title format. You can provide either a descriptive,
                             older-style title, such as:</p>
-                        <egXML xmlns="http://www.tei-c.org/ns/Examples"><![CDATA[<titleStmt><title>Letter to Charlotte Murchison, 25 Feb [1829]</title></titleStmt>]]></egXML>
+                        <egXML xmlns="http://www.tei-c.org/ns/Examples"><titleStmt><title>Letter to Charlotte Murchison, 25 Feb [1829]</title></titleStmt></egXML>
                         <p>or a shorter style version that reflects how the letter actually appears
                             in Epsilon:</p>
-                        <egXML xmlns="http://www.tei-c.org/ns/Examples"><![CDATA[<titleStmt><title xml:id="main_title">ANNING-LETTER-1</title></titleStmt>]]></egXML>
+                        <egXML xmlns="http://www.tei-c.org/ns/Examples"><titleStmt><title xml:id="main_title">ANNING-LETTER-1</title></titleStmt></egXML>
                     </div>
                    
                    <div>
                        <head xml:id="publicationStmt">Publication information [REQ]</head>
                        <p><gi>publicationStmt</gi> contains information about the person or project who contributed the letter transcription.</p>
-                       <egXML xmlns="http://www.tei-c.org/ns/Examples"><![CDATA[
+                       <egXML xmlns="http://www.tei-c.org/ns/Examples">
       <publicationStmt>
         <authority>Mary Anning Project</authority>
         <date when="2025-03-26">2025</date>
       </publicationStmt>
-    ]]></egXML>
+    </egXML>
                        <p>or</p>
-                       <egXML xmlns="http://www.tei-c.org/ns/Examples"><![CDATA[
+                       <egXML xmlns="http://www.tei-c.org/ns/Examples">
       <publicationStmt>
         <authority>Jane Bloggs</authority>
         <date when="2025-03-26">2025</date>
       </publicationStmt>
-    ]]></egXML>
+    </egXML>
                    </div>
                    
                    <div>
@@ -247,23 +327,23 @@
                             provenance, and related items (if any). The order is not significant.
                             Postmarks and datestamps are notes with types <att>postmark</att> or
                                 <att>datestamp</att> respectively:</p>
-                        <egXML xmlns="http://www.tei-c.org/ns/Examples"><![CDATA[
+                        <egXML xmlns="http://www.tei-c.org/ns/Examples">
       <notesStmt>
         <note type="postmark">JA 17 1825</note>
       </notesStmt>
-    ]]></egXML>
+    </egXML>
                     </div>
                    
                    <div>
                         <head xml:id="endorsement">Endorsement [OPT]</head>
                         <p>If a letter has an endorsement, it goes in <gi>notesStmt</gi>, similar to
                             postmarks and datestamps:</p>
-                        <egXML xmlns="http://www.tei-c.org/ns/Examples"><![CDATA[
+                        <egXML xmlns="http://www.tei-c.org/ns/Examples">
       <notesStmt>
         <note type="postmark">JA 17 1825</note>
         <note type="endorsement" subtype="letter">‘/76’</note>
       </notesStmt>
-    ]]></egXML>
+    </egXML>
                     </div>
                    
                    <div>
@@ -272,30 +352,30 @@
                        <div>
                            <head xml:id="provenance">Manuscripts</head>
                            <p>There are two ways that you can record the letter's manuscript source. The preferred method is to use the detailed elements in <gi>msDesc</gi>:</p>
-                           <egXML xmlns="http://www.tei-c.org/ns/Examples"><![CDATA[
+                           <egXML xmlns="http://www.tei-c.org/ns/Examples">
         <msDesc>
           <msIdentifier>
             <repository>The Geological Society</repository>
             <idno>LDGSL/613/2/57</idno>
           </msIdentifier>
         </msDesc>
-      ]]></egXML>
+      </egXML>
                            <list>
                                <item><gi>repository</gi> contains the name of the institution that holds the items.</item>
                                <item><gi>idno</gi> contains that institution's shelfmark or identifying number for the item.</item>
                            </list>
                            <p>You can also use a simpler form:</p>
-                           <egXML xmlns="http://www.tei-c.org/ns/Examples"><![CDATA[
+                           <egXML xmlns="http://www.tei-c.org/ns/Examples">
         <bibl type="provenance">LDGSL/613/2/57, The Geological Society</bibl>
-      ]]></egXML>
+      </egXML>
                        </div>
                        
                        <div>
                            <head xml:id="printedSources">Printed Sources</head>
                            <p><!-- We should probably support biblStruct - or at least a bit more bibl coding -->Currently, the only method to record printed sources is:</p>
-                           <egXML xmlns="http://www.tei-c.org/ns/Examples"><![CDATA[
+                           <egXML xmlns="http://www.tei-c.org/ns/Examples">
         <bibl type="printedSource"><hi rend="italic">LL</hi> 3: 219</bibl>
-      ]]></egXML>
+      </egXML>
                        </div>
                        
                        <div>
@@ -306,7 +386,7 @@
                                 of each source in order. The following describes a hypothetical
                                 letter where the first part is in The Geological Society and the
                                 final part is in the Cambridge University Library:</p>
-                           <egXML xmlns="http://www.tei-c.org/ns/Examples"><![CDATA[
+                           <egXML xmlns="http://www.tei-c.org/ns/Examples">
         <msDesc>
           <msIdentifier>
             <repository>The Geological Society</repository>
@@ -319,12 +399,12 @@
             <idno>MS Add 999999999</idno>
           </msIdentifier>
         </msDesc>
-      ]]></egXML>
+      </egXML>
                            <p>or briefly:</p>
-                           <egXML xmlns="http://www.tei-c.org/ns/Examples"><![CDATA[
+                           <egXML xmlns="http://www.tei-c.org/ns/Examples">
         <bibl type="provenance">LDGSL/613/2/57, The Geological Society</bibl>
         <bibl type="provenance">MS Add 999999999, Cambridge University Library</bibl>
-      ]]></egXML>
+      </egXML>
                        </div>
                        
                    </div>
@@ -346,7 +426,7 @@
                             recipient.</item>
                     </list>
                     <p>Example structure:</p>
-                    <egXML xmlns="http://www.tei-c.org/ns/Examples"><![CDATA[
+                    <egXML xmlns="http://www.tei-c.org/ns/Examples">
     <correspAction type="sent">
       <persName>Darwin, C. R.</persName>
       <placeName>Abinger Hall Down</placeName>
@@ -355,7 +435,7 @@
     <correspAction type="received">
       <persName>Schultze, Fritz</persName>
     </correspAction>
-  ]]></egXML>
+  </egXML>
                     <p>Each <gi>correspAction</gi> element may contain the following elements:</p>
                     <list>
                         <item><gi>persName</gi> or <gi>orgName</gi>
@@ -382,13 +462,13 @@
                             William Baxter, or William Warner Baxter (each considered a distinct
                             individual as opposed to three different versions of one indvidual’s
                             name), your markup should look like this:</p>
-                        <p><egXML xmlns="http://www.tei-c.org/ns/Examples"><![CDATA[
+                        <p><egXML xmlns="http://www.tei-c.org/ns/Examples">
     <correspAction type="received" subtype="personGrp">
       <persName xml:id="name1" exclude="#name2 #name3">Baxter, W. W.</persName>
       <persName xml:id="name2" exclude="#name1 #name3">Baxter, William</persName>
       <persName xml:id="name3" exclude="#name1 #name2">Baxter, William Q.</persName>
     </correspAction>
-  ]]></egXML></p>
+  </egXML></p>
                         <p>To manage mutually exclusive correspondents clearly:</p>
                         <list>
                             <item>Assign a unique <att>xml:id</att> to each potential correspondent.
@@ -397,12 +477,12 @@
                                 etc.).</item>
                             <item>Use the <att>exclude</att> attribute to specify mutually exclusive
                                 choices. For example,
-                                    <egXML xmlns="http://www.tei-c.org/ns/Examples"><![CDATA[<persName xml:id="name1" exclude="#name2 #name3">Baxter, W. W.</persName>]]></egXML>
+                                    <egXML xmlns="http://www.tei-c.org/ns/Examples"><persName xml:id="name1" exclude="#name2 #name3">Baxter, W. W.</persName></egXML>
                                 indicates that selecting "name1" excludes "name2" and "name3".
                                 Similarly, the second correspondent,
-                                    <egXML xmlns="http://www.tei-c.org/ns/Examples"><![CDATA[<persName xml:id="name2" exclude="#name1 #name3">Baxter, William</persName>]]></egXML>,
+                                    <egXML xmlns="http://www.tei-c.org/ns/Examples"><persName xml:id="name2" exclude="#name1 #name3">Baxter, William</persName></egXML>,
                                 excludes "name1" and "name3"; and the third,
-                                    <egXML xmlns="http://www.tei-c.org/ns/Examples"><![CDATA[<persName xml:id="name3" exclude="#name1 #name2">Baxter, William Q.</persName>]]></egXML>,
+                                    <egXML xmlns="http://www.tei-c.org/ns/Examples"><persName xml:id="name3" exclude="#name1 #name2">Baxter, William Q.</persName></egXML>,
                                 excludes "name1" and "name2".</item>
                         </list>
                         <p>This markup clearly documents alternative correspondents and ensures
@@ -420,7 +500,7 @@
                             <item>A natural-language version of the date is contained within the
                                 element (<hi rend="italic">e.g.</hi> “1 Jan 1880”, “after 1 Jan
                                 1880”, “22 June [1874?]”):
-                                    <egXML xmlns="http://www.tei-c.org/ns/Examples"><![CDATA[[c. 31 Jan 1878?]]]></egXML>
+                                    <egXML xmlns="http://www.tei-c.org/ns/Examples">[c. 31 Jan 1878?]</egXML>
                             </item>
                             <item>One or more attributes: <att>when</att>, <att>notBefore</att>,
                                 and/or <att>notAfter</att> that contain ISO versions of the date
@@ -430,14 +510,14 @@
                         <p>Use the attributes as follows:</p>
                         <list>
                             <item><att>when</att> for a specific known (or inferred) date:
-                                    <egXML xmlns="http://www.tei-c.org/ns/Examples"><![CDATA[<date when="1880-01-06">6 Jan 1880</date>]]></egXML>
+                                    <egXML xmlns="http://www.tei-c.org/ns/Examples"><date when="1880-01-06">6 Jan 1880</date></egXML>
                             </item>
                             <item><att>notBefore</att> when only the earliest possible date is
                                 known:
-                                    <egXML xmlns="http://www.tei-c.org/ns/Examples"><![CDATA[<date notBefore="1879-02-17">[after 16 Feb 1879]</date>]]></egXML>
+                                    <egXML xmlns="http://www.tei-c.org/ns/Examples"><date notBefore="1879-02-17">[after 16 Feb 1879]</date></egXML>
                             </item>
                             <item><att>notAfter</att> when only the latest possible date is known:
-                                    <egXML xmlns="http://www.tei-c.org/ns/Examples"><![CDATA[<date notAfter="1879-02-15">[before 16 Feb 1879]</date>]]></egXML>
+                                    <egXML xmlns="http://www.tei-c.org/ns/Examples"><date notAfter="1879-02-15">[before 16 Feb 1879]</date></egXML>
                             </item>
                         </list>
                         <p>It is highly recommended that you establish canonical dates for the
@@ -449,33 +529,33 @@
                             (1882-12-31) as these values. </p>
                         <p>
                             <list>
-                                <item><egXML xmlns="http://www.tei-c.org/ns/Examples"><![CDATA[<date notBefore="1879-02-17" notAfter="1882-12-31">[after 16 Feb 1879]</date>]]></egXML>
+                                <item><egXML xmlns="http://www.tei-c.org/ns/Examples"><date notBefore="1879-02-17" notAfter="1882-12-31">[after 16 Feb 1879]</date></egXML>
                                 </item>
-                                <item><egXML xmlns="http://www.tei-c.org/ns/Examples"><![CDATA[<date notBefore="1809-01-01" notAfter="1879-02-15">[before 16 Feb 1879]</date>]]></egXML>
+                                <item><egXML xmlns="http://www.tei-c.org/ns/Examples"><date notBefore="1809-01-01" notAfter="1879-02-15">[before 16 Feb 1879]</date></egXML>
                                 </item>
                             </list>
                         </p>
                         <p>A letter written over multiple known days should use separate
                                 <gi>date</gi> elements (this does not define a range, but two
                             separate events):</p>
-                        <egXML xmlns="http://www.tei-c.org/ns/Examples"><![CDATA[
+                        <egXML xmlns="http://www.tei-c.org/ns/Examples">
     <date when="1880-01-01">1 Jan 1880</date>
     <date when="1880-01-09">9 Jan 1880</date>
-  ]]></egXML>
+  </egXML>
                         <p>A letter written between two dates would be encoded using a single
                                 <gi>date</gi> with <att>notBefore</att> and <att>notAfter</att>:</p>
-                        <egXML xmlns="http://www.tei-c.org/ns/Examples"><![CDATA[
+                        <egXML xmlns="http://www.tei-c.org/ns/Examples">
     <date notBefore="1879-12-24" notAfter="1880-01-05">[24 Dec 1879–5 Jan 1880]</date>
-  ]]></egXML>
+  </egXML>
                         <p>Be careful when encoding <att>notBefore</att> and <att>notAfter</att>.
                             The logic of the attributes might differ slightly from the logic of the
                             natural language text:</p>
                         <list>
                             <item><att>notAfter</att> means "on or before" the given date:
-                                    <egXML xmlns="http://www.tei-c.org/ns/Examples"><![CDATA[<date notAfter="1880-01-05">[before 6 Jan 1880]</date>]]></egXML>
+                                    <egXML xmlns="http://www.tei-c.org/ns/Examples"><date notAfter="1880-01-05">[before 6 Jan 1880]</date></egXML>
                                     (<hi rend="italic">i.e.</hi>, 5 Jan or earlier). </item>
                             <item><att>notBefore</att> means "on or after" the given date:
-                                    <egXML xmlns="http://www.tei-c.org/ns/Examples"><![CDATA[<date notBefore="1880-01-06">[after 5 Jan 1880]</date>]]></egXML>
+                                    <egXML xmlns="http://www.tei-c.org/ns/Examples"><date notBefore="1880-01-06">[after 5 Jan 1880]</date></egXML>
                                     (<hi rend="italic">i.e.</hi>, 6 Jan or later). </item>
                         </list>
                         <p>For more complex date situations, including exclusive dates, see <ref
@@ -489,12 +569,12 @@
                        <p>You may supply a summary using <gi>abstract</gi>, which appears
                         immediately after <gi>correspDesc</gi>:</p>
                        
-                       <egXML xmlns="http://www.tei-c.org/ns/Examples"><![CDATA[
+                       <egXML xmlns="http://www.tei-c.org/ns/Examples">
     <abstract>
       <p>Thanks FS for his book [<hi rend="italic">Kant und Darwin</hi>].</p>
       <p>Sends regards to Haeckel.</p>
     </abstract>
-  ]]></egXML>
+  </egXML>
                        
                        
                    </div>
@@ -534,24 +614,554 @@
                         on the Epsilon site.</item>
                 </list>
                 <p>Example of a letter that has just been catalogued:</p>
-                <egXML xmlns="http://www.tei-c.org/ns/Examples"><![CDATA[
+                <egXML xmlns="http://www.tei-c.org/ns/Examples">
     <revisionDesc>
       <change when="2015-10-02" status="catalogued" xml:id="jbloggs">Catalogued by Jane Bloggs</change>
     </revisionDesc>
-  ]]></egXML>
+  </egXML>
                 <p>Example of a letter that has been catalogued, transcribed and proofed:</p>
-                <egXML xmlns="http://www.tei-c.org/ns/Examples"><![CDATA[
+                <egXML xmlns="http://www.tei-c.org/ns/Examples">
     <change when="2015-10-02" status="catalogued">Catalogued by <name  xml:id="jbloggs">Jane Bloggs</name></change>
 <change when="2015-11-02" status="transcribed">Transcribed by <name xml:id="another">A.N. Other</name>.</change>
     <change when="2015-12-02" status="proofed">Document proofed by <name sameAs="#jbloggs">Jane Bloggs</name>.</change>
-  ]]></egXML>
+  </egXML>
             
             <p>To mark a letter as released, simply add a <gi>change</gi> element with
                     <att>status</att> equal to <val>released</val>.</p>
-               <p><egXML xmlns="http://www.tei-c.org/ns/Examples"><![CDATA[
+               <p><egXML xmlns="http://www.tei-c.org/ns/Examples">
                <change when="2015-12-03" status="released">Document released.</change>
-           ]]></egXML></p>
+           </egXML></p>
            <p> This is the only change element that is required for letters. All the others are optional. The textual content of the change elements can be as you like, but they are not displayed on the Epsilon site.</p>
+           </div>
+           
+           <div>
+               <head xml:id="editing">Editing the Letter Text</head>
+               
+               <p>The textual content of the letter, including any enclosures, translations, and footnotes, is contained within the <gi>body</gi> element inside <gi>text</gi>. The <gi>body</gi> is divided into three sections, each coded as a separate <gi>div</gi> with a <att>type</att> attribute indicating its content:</p>
+               
+               <list>
+                   <item><tag>div type="letter"</tag>: <hi rend="bold">[REQ]</hi> Contains the
+                        original letter content.</item>
+                   <item><tag>div type="translation"</tag>: <hi rend="bold">[OPT]</hi> Contains
+                        translation content, if one is being provided.</item>
+                   <item><tag>div type="footnotes"</tag>: <hi rend="bold">[OPT]</hi> Contains
+                        footnotes, if any exist.</item>
+               </list>
+               
+               <p>Example structure:</p>
+               
+               <egXML xmlns="http://www.tei-c.org/ns/Examples">
+    <text>
+      <body>
+        <div type="letter">
+          <![CDATA[<!-- Letter content goes here -->]]>
+        </div>
+
+        <div type="translation">
+          <![CDATA[<!-- Translation content goes here, if applicable. Otherwise omit this div. -->]]>
+        </div>
+
+        <div type="footnotes">
+          <![CDATA[<!-- Footnotes go here, if applicable. Otherwise omit this div. -->]]>
+        </div>
+      </body>
+    </text>
+  </egXML>
+               
+               <p>Only the <tag>div type="letter"</tag> is mandatory. Include <tag>div type="translation"</tag> and <tag>div type="footnotes"</tag> only if the letter has translations or footnotes, respectively. Otherwise, omit these elements.</p>
+           </div>
+           <div>
+               <head xml:id="opener">Opener [REC]</head>
+               
+               <p>The opener contains the address (<gi>placeName</gi>), date (<gi>date</gi>),
+                    salutation (<gi>salute</gi>), and any salutation notes (<tag>seg
+                        type="supplemental"</tag>).</p>
+               
+               <egXML xmlns="http://www.tei-c.org/ns/Examples">
+    <opener>
+      <placeName><hi rend="print">Down, | Beckenham, Kent. | Railway Station | Orpington. S.E.R.</hi></placeName>
+      <date>Sunday</date>
+      <seg type="supplemental">(Home tomorrow)</seg>
+      <salute>Dear Dyer.</salute>
+    </opener>
+  </egXML>
+               <div>
+                   <head xml:id="address">Address [OPT]</head>
+                   <p>The address is encoded using <gi>placeName</gi> and should be coded exactly as it appears in the letter. Use <tag>hi rend="print"</tag> if the address is printed letterhead.</p>
+               
+               
+               <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                   <opener>
+                   <placeName><hi rend="print">The Forest</hi>.</placeName>
+                   <date>Monday Feb<hi rend="superscript">y</hi>. 18<hi rend="superscript">th</hi>.—</date>
+                   <salute>My dear Charles,</salute>
+               </opener>
+               </egXML>
+               </div>
+               
+               <div>
+                   <head xml:id="date">Date [OPT]</head>
+                   <p>The <gi>date</gi> element within <gi>opener</gi> records the date exactly as it appears in the manuscript or printed source. Dating attributes are not required here. Indicate any printed portions of the date with <tag>hi rend="print"</tag>, and superscripts with <tag>hi rend="superscript"</tag>.</p>
+               </div>
+               
+               <div>
+                   <head xml:id="supplemental">Salutation note/Sendname [OPT]</head>
+                   <p>Supplemental text in the header should now be marked as <tag>seg type="supplemental"</tag>. It will be left-justified above the salutation in printed form.</p>
+                   
+                   <egXML xmlns="http://www.tei-c.org/ns/Examples">
+      <seg type="supplemental">M<hi rend="superscript">r</hi>. Charles Darwin in Down, Beckenham, Kent, England.</seg>
+    </egXML>
+               </div>
+               
+               <div>
+                   <head xml:id="salutation">Salutation</head>
+                   <p>The salutation remains unchanged, encoded simply as <gi>salute</gi>:</p>
+                   
+                   <egXML xmlns="http://www.tei-c.org/ns/Examples">
+      <salute>Dear Sir,</salute>
+    </egXML>
+               </div>
+               
+           </div>
+           
+           <div>
+               <head xml:id="text">Letter Body Text</head>
+               
+               <p>Prose paragraphs should be marked with <gi>p</gi>. Normally, minor variations in paragraph formatting from the original source don't need encoding. However, specific block formatting such as centering, right justification, unusual first-line indentation, hanging indents, or block quotations should be indicated using the <att>rend</att> attribute.</p>
+               
+               <p>If text appears centered because it functions as a heading, tag it as a heading rather than a centered paragraph. In this case, use <tag>ab rend="centre" type="head"</tag> instead of <tag>p rend="centre"</tag>.</p>
+               
+               <!--TODO: Provide detailed guidelines on acceptable values for the <att>rend</att> attribute for various block formats (e.g., left justification, indents, etc.)-->
+           </div>
+           
+           <div>
+               <head xml:id="footnoteRefs">Footnote Markers</head>
+               
+               <p>Footnote markers should be encoded using <gi>ref</gi> as follows:</p>
+               
+               <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                   ...Lorem ipsum dolor sit amet, consectetur adipiscing elit.<ref target="#foot.f2"/> Quisque vestibulum urna sed justo gravida...
+  </egXML>
+               
+               <p>Here, the value “<val>#foot.f2</val>” points to a corresponding note at the bottom of the document, marked with an <att>xml:id</att> of “<val>foot.f2</val>”.</p>
+               
+               <p>Footnotes themselves appear as <gi>note</gi> elements within the final <gi>div</gi> in the <gi>body</gi>, tagged as <tag>div type="footnotes"</tag>:</p>
+               
+               <egXML xmlns="http://www.tei-c.org/ns/Examples">
+    <note xml:id="foot.f1">Lorem ipse dolor zzrill</note>
+    <note xml:id="foot.f2">See letter to William Marshall, 29 May 1875. CD had sent Marshall an ostrich feather that he had received from Thomas François Burgers.</note>
+  </egXML>
+               
+               <p>You do not need to duplicate <gi>note</gi> elements for footnotes with identical content in both the original letter and its translation. Only create a new <gi>note</gi> for the translation if <hi rend="bold">no</hi> existing <gi>note</gi> matches the desired content.</p>
+               
+               <p>Ensure each footnote reference within the letter or translation correctly points to the appropriate footnote using the <tag>ref</tag> element, e.g., <tag>ref target="#foot.f12"</tag>. You don't need to manually add footnote numbers; Epsilon will automatically number notes and their markers when displayed.</p>
+               
+               <p>Footnote markers can also be applied to certain metadata elements within the header, such as <tag>note type="description"</tag>, <tag>note type="postmark"</tag>, <tag>note type="endorsement"</tag>, and <tag>bibl type="provenance"</tag>.</p>
+               
+           </div>
+           
+           <div>
+                <head xml:id="x-refs">Letter and Person Cross References</head>
+                <p>Letter cross-references in footnotes should be encoded so they link directly to
+                    the referenced letter. Wrap the descriptive text of the referenced letter (e.g.,
+                    ‘letter from E. A. Darwin, 5 [March 1823]’) in a <gi>ref</gi> element. This
+                    element must have a <att>target</att> attribute containing a relative path that
+                    points to another TEI resource within your repository. For example:</p>
+                <egXML xmlns="http://www.tei-c.org/ns/Examples">
+    See also the <ref target="./DCP-LETT-5.xml">letter from E. A. Darwin, 5 [March 1823]</ref>.
+  </egXML>
+                <p>Simply put, this means it shows the location of the document you're linking to in
+                    relation to the current document you're working on. For instance, <val>./</val>
+                    means the referenced file is in the same folder as your current file. A path
+                    like <val>../</val> means the file is located one folder up from your current
+                    location. If you are linking from one letter file (say
+                        <val>ANNING-LETTER-1.xml</val> to another, say
+                        <val>ANNING-LETTER-2.xml</val>, you would the target would be
+                        <val>./ANNING-LETTER-2.xml</val>.</p>
+                <p>The examples above assume you're linking between items of the same type (e.g.,
+                    letter to letter, person to person). If you're linking between different types
+                    of documents (such as from a letter to a person), include the full relative
+                    path. For instance, linking from a letter file to a person entry (located in
+                    another folder) might look like this:</p>
+                <egXML xmlns="http://www.tei-c.org/ns/Examples">
+    ... <ref target="../nameregs/nameregs_1.xml">Charlotte Murchison</ref> ...
+  </egXML>
+            </div>
+           
+           <div>
+               <head xml:id="list">Lists</head>
+               <p>Lists should be encoded using <tag>list rend="ordered"</tag>, with each item in
+                    the list tagged as <gi>item</gi>. If a list is numbered, transcribe the number
+                    and its punctuation exactly as they appear in the manuscript, marking them as
+                        <gi>label</gi>:</p>
+               
+               <egXML xmlns="http://www.tei-c.org/ns/Examples">
+    <list rend="ordered">
+      <item><label>1.</label> “intense cobalt Blue”</item>
+      <item><label>2</label> “silver yellow”</item>
+      <item><label>4)</label> “deep copper red”.</item>
+    </list>
+  </egXML>
+           </div>
+           
+           <div>
+               <head xml:id="whitespace">Intentionally Blank Whitespace in the Original Document</head>
+               <p>Instead of using line breaks or strings of spaces to represent intentionally created whitespace in the original letter, use the <gi>space</gi> element. This element has three attributes:</p>
+               <list>
+                   <item><att>dim</att> specifies the direction (‘<val>horizontal</val>’ or ‘<val>vertical</val>’).</item>
+                   <item><att>extent</att> gives a numerical value indicating how large the space is.</item>
+                   <item><att>unit</att> indicates the unit of measurement (typically ‘<val>chars</val>’ for horizontal whitespace or ‘<val>lines</val>’ for vertical whitespace).</item>
+               </list>
+           </div>
+           
+           <div>
+               <head xml:id="specialCharacters">Special Characters</head>
+               <p>Most special characters encountered in letters, such as those used in Western
+                    European languages, can be entered directly using the Character Map. However,
+                    certain characters, like less-than or greater-than signs (&lt;, &gt;),
+                    ampersands (&amp;), male/female symbols, and the symbols for degrees, minutes,
+                    and seconds, should be entered using named entities as outlined in Appendix
+                    XXXXXXX. A full list of available entities can be found in our <ref
+                        target="/view?docId=documentation/EntityList.xml">Entity List</ref>.</p>
+           </div>
+           
+           <div>
+               <head xml:id="mathematics">Mathematics, Fractions, and Equations</head>
+               <p>Fractions and equations should be marked up using representational MathML.
+                    Examples can be found in the comprehensive guidelines linked from the
+                    introduction. Here's an example of encoding the fraction one half (½):</p>
+               
+               <egXML xmlns="http://www.tei-c.org/ns/Examples">
+    <formula>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <mfrac><mn>1</mn><mn>2</mn></mfrac>
+      </math>
+    </formula>
+  </egXML>
+               
+               <p>If you need to encode more complex mathematical content, please contact <ref target="mailto:epsilon@lib.cam.ac.uk">epsilon@lib.cam.ac.uk</ref></p>
+           </div>
+           
+           <div>
+               <head xml:id="formatting">Character Formatting</head>
+               
+               <p>Text that has distinctive formatting, such as <hi rend="bold">bold</hi>, <hi rend="italic">italicised</hi>, <hi rend="subscript">subscripted</hi>, <hi rend="superscript">superscripted</hi>, <hi rend="smallCaps">Small Capitals</hi>, or <hi rend="underline">underlined</hi> should be tagged using the <gi>hi</gi> element with a corresponding <att>rend</att> attribute. Possible values include: </p>
+                   <list>
+                       <item><val>bold</val>: <hi rend="bold">bold text</hi></item>
+                       <item><val>italic</val>: <hi rend="italic">italicised text</hi></item>
+                       <item><val>subscript</val>: Lorem<hi rend="subscript">subscripted</hi></item>
+                       <item><val>superscript</val>: Lorem<hi rend="superscript">superscripted</hi></item>
+                       <item><val>smallCaps</val>: <hi rend="smallCaps">Text in Small Capitals</hi></item>
+                       <item><val>doubleUnderline</val>: <hi rend="doubleUnderline">double underlining</hi></item>
+                       <item><val>underline</val>: <hi rend="underline">underline</hi></item>
+                   </list>
+                   
+                   <p>A full list of available values is provided in the Element Set documentation.</p>
+               
+               <p>Multiple formatting styles can be applied simultaneously. For example, text that is both superscripted and italicised would be encoded as follows:</p>
+               <egXML xmlns="http://www.tei-c.org/ns/Examples">
+    <hi rend="superscript italic">superscripted italic text</hi>
+  </egXML>
+               
+               <p>Formatting is inherited when nested. For example, if you have superscripted text with only a portion in italics, encode it as:</p>
+               <egXML xmlns="http://www.tei-c.org/ns/Examples">
+    <hi rend="superscript">superscripted <hi rend="italic">italic</hi> text</hi>
+  ]</egXML>
+               
+           </div>
+           
+           <div>
+               <head xml:id="diagrams">Diagrams and Illustrations</head>
+               
+               <p>TODO</p>
+               <egXML xmlns="http://www.tei-c.org/ns/Examples">
+    <figure><graphic/></figure>
+  </egXML>
+               
+               <p>The <gi>graphic</gi> element will eventually include a <att>url</att> attribute pointing to the actual image file, but you don't need to worry about this during the normal editing process. Until an image file is provided and linked, the markup above will display automatically as “[DIAG HERE]”.</p>
+           </div>
+           
+           <div>
+               <head xml:id="enclosures">Enclosures [OPT]</head>
+               
+               <p>If a letter includes an enclosure, encode it within a <tag>div type="enclosure"</tag> element, placed directly below the <tag>div type="text"</tag>. Each enclosure must include a mandatory <att>subtype</att> attribute specifying whether the enclosure is a <val>letter</val> or <val>other</val>. <hi rend="bold">Each enclosure must also contain a <tag>div type="transcription"</tag> element</hi> for the enclosed text to appear correctly in Epsilon.</p>
+               
+               <p>If multiple enclosures are present, create a separate <tag>div type="enclosure"</tag> for each one, assigning each enclosure a unique <att>xml:id</att>. It is essential that the enclosures are nested correctly inside the main <tag>div type="letter"</tag>.</p>
+               
+               <p>If there is an enclosure but no main letter text is available, you still need to include the standard empty structure (including the <gi>text</gi> element), even if it is left blank.</p>
+               
+               <egXML xmlns="http://www.tei-c.org/ns/Examples">
+    <div type="enclosure" subtype="letter" xml:id="encl.1">
+        <![CDATA[<!-- Transcription of a single enclosure (an enclosed letter). -->]]>
+        <opener>
+            <![CDATA[<!-- Salutation and other opening elements of enclosed letter -->]]>
+        </opener>
+        <div type="transcription">
+            <![CDATA[<!-- Main body text of enclosed letter -->]]>
+        </div>
+    </div>
+
+    <div type="enclosure" subtype="other" xml:id="encl.2">
+        <![CDATA[<!-- Transcription of another type of enclosure (not a letter). -->]]>
+        <div type="transcription">
+            <![CDATA[<!-- Main body text of non-letter enclosure -->]]>
+        </div>
+    </div>
+  </egXML>
+               
+           </div>
+           
+           <div>
+               <head xml:id="footnotes">Footnotes</head>
+               
+               <p>Footnotes are placed within a <tag>div type="footnotes"</tag> element. Each footnote should be created as a <gi>note</gi> element, assigned a unique <att>xml:id</att>. These IDs are referenced by the <att>target</att> attribute of <gi>ref</gi> elements elsewhere in the document. For example, the footnote with ID ‘<val>foot.f1</val>’ would be referenced as <tag>ref target="#foot.f1"</tag>:</p>
+               
+               <egXML xmlns="http://www.tei-c.org/ns/Examples">
+    <note xml:id="foot.f1">The year is established by the relationship between this letter and the letter from John Scott, [1-11] April [1863].</note>
+  </egXML>
+               
+               <p>Ensure the footnotes' <gi>div</gi> (<tag>div type="footnotes"</tag>) is not nested inside any other <gi>div</gi>. It must be the last element inside the <gi>body</gi> element, placed after all other <gi>div</gi> elements.</p>
+               
+               <p>You should not provide footnote numbers in the text or the notes themselves as the footnotes and their indicators will be automatically numbered according to their final position within the document when displayed online. The primary requirement is that each <gi>ref</gi> correctly points to the appropriate <gi>note</gi> via the <att>target</att> attribute (e.g., <tag>ref target="#foot.f1"</tag> points to <tag>note xml:id="foot.f1"</tag>). While editors should choose semantically meaningful <att>xml:id</att> values for notes (like foot.f1, foot.f2, foot.f3), the exact text used in these IDs doesn't affect final numbering. Technically, the IDs could even be arbitrary (e.g., ‘larry’, ‘moe’, and ‘curly’); all that matters is accurate referencing between each <gi>ref</gi> and its corresponding <gi>note</gi>.</p>
+           </div>
+           
+           
+           <div>
+               <head xml:id="datesappendix">Appendix I: Correspondence Dates</head>
+               
+               <p>Correspodence dates should be encoded using the <gi>date</gi> element, which has two main parts:</p>
+               
+               <list>
+                   <item>The natural-language text inside the element (<hi rend="italic">e.g.</hi>, "1 Jan 1880"; "after 1 Jan 1880"; "22 June 1874–82").</item>
+                   <item>One or two attributes (<att>when</att>, <att>notBefore</att>, and/or <att>notAfter</att>) that contain ISO-formatted date values (<val>yyyy-mm-dd</val>), used for sorting and searching letters.</item>
+               </list>
+               
+               <div>
+                   <head>a) Encoding the Natural-Language Date Text</head>
+                   <p>Enter dates exactly as you would normally present them in print (e.g., "1 Jan 1880"; "after 1 Jan 1880"; "before 1 Jan 1880"; "1-10 Jan 1880"; "Oct–Dec 1846"; "22 June 1874–82").</p>
+                   <!-- TODO Do we want to support supplied in this fashion? -->
+                   <p>If part of the date is inferred, this is often indicated using square brackets, mark it with the <gi>supplied</gi> element, giving the name of the editor who inferred it using <att>resp</att>. If there's uncertainty, also add a <att>cert</att> attribute ("low", "medium", or "high"). Examples:</p>
+                   
+                   <egXML xmlns="http://www.tei-c.org/ns/Examples">
+<date>22 June <supplied resp="#mjhawkins">1874–82</supplied></date>
+</egXML>
+                   
+                   <p>This renders as "22 June [1874–82]". With uncertainty (represented by a question mark):</p>
+                   
+                   <egXML xmlns="http://www.tei-c.org/ns/Examples">
+<date><supplied resp="#mjhawkins" cert="medium"><hi rend="italic">c.</hi> 31 January 1878</supplied></date>
+</egXML>
+                   
+                   <p>This renders as "[<hi rend="italic">c.</hi> 31 January 1878?]".</p>
+               </div>
+               
+               <div>
+                   <head>b) ISO Date Attributes: <att>when</att>, <att>notBefore</att>, <att>notAfter</att></head>
+                   <list>
+                       <item><att>when</att>: Used when a letter has a specific known or inferred date:
+                           <egXML xmlns="http://www.tei-c.org/ns/Examples">
+<date when="1880-01-06">6 January 1880</date>
+</egXML>
+                       </item>
+                       
+                       <item><att>notBefore</att>: Indicates the earliest possible date the letter was written:
+                           <egXML xmlns="http://www.tei-c.org/ns/Examples">
+<date notBefore="1880-01-07">after 6 January 1880</date>
+</egXML>
+                       </item>
+                       
+                       <item><att>notAfter</att>: Indicates the latest possible date the letter was written:
+                           <egXML xmlns="http://www.tei-c.org/ns/Examples">
+<date notAfter="1880-01-05">before 6 January 1880</date>
+</egXML>
+                       </item>
+                       
+                       <item>When used together, <att>notBefore</att> and <att>notAfter</att> define a date range:
+                           <egXML xmlns="http://www.tei-c.org/ns/Examples">
+<date notBefore="1879-12-24" notAfter="1880-01-05">24 December 1879 – 5 January 1880</date>
+</egXML>
+                       </item>
+                   </list>
+                   
+                   <p><hi rend="bold">Important:</hi> Pay careful attention to the meaning of your natural language and attribute values when encoding date ranges. Don't just convert the natural language date to its ISO equivalent without carefully considering the logic.</p>
+                   <p>If the textual date says "before 6 Jan 1880", the correct ISO date in <att>notAfter</att> is one day earlier: <egXML xmlns="http://www.tei-c.org/ns/Examples"><date notAfter="1880-01-05">[before 6 Jan 1880]</date></egXML>. That is, the letter could not have been written after 5 Jan 1880 or, put another way, it was written before 6 Jan.</p>
+                   <p>If the letter was written "after 6 Jan 1880, you would use <att>notBefore</att>: <egXML xmlns="http://www.tei-c.org/ns/Examples"><date notBefore="1880-01-07">[after 6 Jan 1880]</date></egXML></p>
+               </div>
+               
+               <div>
+                   <head>c) Multiple or Mutually Exclusive Dates</head>
+                   <p>If there are multiple possible dates that are mutually exclusive (for example, uncertainty between two or more dates), encode each option separately using unique <att>xml:id</att> attributes and indicate mutual exclusion with <att>exclude</att>. Example:</p>
+                   
+                   <egXML xmlns="http://www.tei-c.org/ns/Examples">
+<date when="1880-01-16" xml:id="date1" exclude="#date2">16 January 1880</date>
+<date when="1880-01-18" xml:id="date2" exclude="#date1">18 January 1880</date>
+</egXML>
+                   
+                   <p>This means the letter was written on either 16 or 18 January 1880, but not both. For more complex examples (e.g., multiple possible Wednesdays in a month), extend the logic similarly:</p>
+                   
+                   <egXML xmlns="http://www.tei-c.org/ns/Examples">
+<date when="1880-01-07" xml:id="date1" exclude="#date2 #date3 #date4">7 January 1880</date>
+<date when="1880-01-14" xml:id="date2" exclude="#date1 #date3 #date4">14 January 1880</date>
+<date when="1880-01-21" xml:id="date3" exclude="#date1 #date2 #date4">21 January 1880</date>
+<date when="1880-01-28" xml:id="date4" exclude="#date1 #date2 #date3">28 January 1880</date>
+</egXML>
+                   
+                   <p>If one date is more probable, use the <att>cert</att> attribute, marking the more likely option with "<val>high</val>" and the others with "<val>low</val>".</p>
+                   
+               </div>
+               
+               <div>
+                   <head>d) Complex Dates and Help</head>
+                   <p>Because encoding complex or multiple dates is prone to mistakes, there's a reference file (0-dates) with pre-made snippets for multiple mutually exclusive date scenarios (two to twelve options). Copy and modify these snippets as needed. If more than twelve options are required or if you have questions, contact Epsilon.</p>
+                   <!-- TODO: SHould we provide a file that contains two, three, four, five ... 31 alternating dates? That'd cover the more common situations - ie some day in month X YYYY; Day X in some month in YYYY. -->
+                   <!-- I could likely create a javascript widget that could create any desired number of options -->
+                   
+                   <p>The key takeaway is to think carefully about the meaning of dates in natural language and translate that clearly and precisely into the correct TEI attributes—avoid copying dates directly into attributes without thought.</p>
+               </div>
+           </div>
+           
+           <div>
+               <head xml:id="tablesappendix">Appendix II: Tables</head>
+               
+               <p>Tables are encoded using the elements <gi>table</gi>, <gi>row</gi>, and <gi>cell</gi>.</p>
+               
+               <p>The <gi>table</gi> element can optionally have a <att>rend</att> attribute to define its width relative to the browser viewport. Valid values range from ‘<val>width05</val>’ up to ‘<val>width100</val>’ in increments of 5, as well as ‘<val>width33</val>’ and ‘<val>width66</val>’.</p>
+               
+               <p>The <gi>cell</gi> element can also have an optional <att>rend</att> attribute, with values specifying:</p>
+               <list>
+                   <item>Alignment: ‘<val>left</val>’, ‘<val>right</val>’, ‘<val>centre</val>’.</item>
+                   <item>Borders: ‘<val>borderAll</val>’, ‘<val>borderBottom</val>’, ‘<val>borderLeft</val>’, ‘<val>borderRight</val>’, ‘<val>borderSides</val>’, ‘<val>borderTop</val>’.</item>
+                   <item>Width relative to the table: similar increments to the table widths described above.</item>
+               </list>
+               
+               <p>The following example creates a table that occupies 50% of the viewport width. The first two columns each take up 20% of the table's width, and the last column occupies the remaining 60%:</p>
+               
+               <egXML xmlns="http://www.tei-c.org/ns/Examples">
+<table rend="width50">
+  <row>
+    <cell rend="width20">A: One</cell>
+    <cell rend="width20">A: Two</cell>
+    <cell rend="width60">A: Three</cell>
+  </row>
+  <row>
+    <cell>B: One</cell>
+    <cell>B: Two</cell>
+    <cell>B: Three</cell>
+  </row>
+  <row>
+    <cell>C: One</cell>
+    <cell>C: Two</cell>
+    <cell>C: Three</cell>
+  </row>
+</table>
+</egXML>
+               
+               <p>Every <gi>row</gi> in a table must have the same total number of columns, but this doesn’t always mean having the same number of actual <gi>cell</gi> elements. Sometimes, a cell will span across multiple columns or rows. To do this, you use the <att>cols</att> or <att>rows</att> attributes. For example, if a table normally has four columns and you use <tag>cell cols="3"</tag> in one of the cells, that row will contain only two <gi>cell</gi> elements: one spanning three columns and one normal cell. However, the total logical number of columns (cells plus their spans) must still equal four. The <att>rows</att> attribute works similarly, except it spans cells vertically, taking up space in the specified number of rows beneath it.</p>
+               
+               <p>A cell spanning three columns is coded as:</p>
+               
+               <egXML xmlns="http://www.tei-c.org/ns/Examples">
+<cell cols="3">...</cell>
+</egXML>
+               
+               <p>Similarly, a cell spanning three columns is encoded as:</p>
+               
+               <egXML xmlns="http://www.tei-c.org/ns/Examples">
+<cell rows="3">...</cell>
+</egXML>
+               
+               <p>Example demonstrating row spanning (vertical spanning):</p>
+               
+               <egXML xmlns="http://www.tei-c.org/ns/Examples">
+<table>
+  <row>
+    <cell>A: One</cell>
+    <cell rend="width10" rows="3">Narrow cell spanning three rows</cell>
+    <cell>A: Three</cell>
+  </row>
+  <row>
+    <cell>B: One</cell>
+    <![CDATA[<!-- 'Phantom cell' created by rows="3" above -->]]>
+    <cell>B: Three</cell>
+  </row>
+  <row>
+    <cell>C: One</cell>
+    <![CDATA[<!-- Another 'phantom cell' -->]]>
+    <cell>C: Three</cell>
+  </row>
+  <row>
+    <cell>D: One</cell>
+    <cell>D: Two</cell>
+    <cell>D: Three</cell>
+  </row>
+  <row>
+    <cell cols="3">One wide cell spanning three columns</cell>
+  </row>
+</table>
+</egXML>
+               
+               <div>
+                   <head>Stretchy Brackets in Tables</head>
+                   <p>You can create stretchy brackets in tables using a single character wrapped in <gi>hi</gi> with a <att>rend</att> of either ‘<val>stretchyVertical</val>’ (for vertical brackets spanning multiple rows) or ‘<val>stretchyHorizontal</val>’ (for horizontal brackets spanning multiple columns).</p>
+                   
+                   <p>For vertical brackets:</p>
+                   <list rend="simple">
+                       <item>The cell must span more than one row using <att>rows</att>.</item>
+                       <item>Contain only a single <tag>hi rend="stretchyVertical"</tag>.</item>
+                       <item>The <gi>hi</gi> must contain a bracket from the <ref target="#stretchies">stretchy brackets list below</ref>.</item>
+                   </list>
+                   
+                   <p>For horizontal brackets:</p>
+                   <list rend="simple">
+                       <item>The table must have a specified width.</item>
+                       <item>The cell must span more than one column using <att>cols</att>.</item>
+                       <item>Contain only a single <tag>hi rend="stretchyHorizontal"</tag>.</item>
+                       <item>Use a bracket from the <ref target="#stretchies">stretchy brackets list below</ref>.</item>
+                   </list>
+               </div>
+               
+               <div>
+                   <table xml:id="stretchies">
+                       <row>
+                           <cell rend="borderAll centre"><hi rend="bold">Brace type</hi></cell>
+                           <cell rend="borderAll centre"><hi rend="bold">Left facing</hi></cell>
+                           <cell rend="borderAll centre"><hi rend="bold">Right facing</hi></cell>
+                           <cell rend="borderAll centre"><hi rend="bold">Upward facing</hi></cell>
+                           <cell rend="borderAll centre"><hi rend="bold">Downward facing</hi></cell>
+                       </row>
+                       <row>
+                           <cell rend="borderAll centre">Curly</cell>
+                           <cell rend="borderAll centre">{</cell>
+                           <cell rend="borderAll centre">}</cell>
+                           <cell rend="borderAll centre">⏞ or <ident>&amp;#x23DE;</ident></cell>
+                           <cell rend="borderAll centre">⏟ or <ident>&amp;#x23DF;</ident></cell>
+                       </row>
+                       <row>
+                           <cell rend="borderAll centre">Rounded</cell>
+                           <cell rend="borderAll centre">(</cell>
+                           <cell rend="borderAll centre">)</cell>
+                           <cell rend="borderAll centre">⏜ or <ident>&amp;#x23DC;</ident></cell>
+                           <cell rend="borderAll centre">⏝ or <ident>&amp;#x23DD;</ident></cell>
+                       </row>
+                       <row>
+                           <cell rend="borderAll centre">Square</cell>
+                           <cell rend="borderAll centre">[</cell>
+                           <cell rend="borderAll centre">]</cell>
+                           <cell rend="borderAll centre">⎴ or <ident>&amp;#x23B4;</ident></cell>
+                           <cell rend="borderAll centre">⎵ or <ident>&amp;#x23B5;</ident></cell>
+                       </row>
+                   </table>
+               </div>
+               
+               <div>
+                   <head>Borders and Vertical Alignment</head>
+                   <p>Borders can be applied to tables, rows, or cells using <att>rend</att> attributes (‘<val>borderAll</val>’, ‘<val>borderBottom</val>’, etc.). Adjacent borders automatically collapse into a single border.</p>
+                   
+                   <p>Cells spanning multiple rows can have vertical alignment controlled via <att>rend</att> with values ‘<val>vAlignTop</val>’, ‘<val>vAlignMiddle</val>’ (default), or ‘<val>vAlignBottom</val>’.</p>
+               
+               
+               <p><hi rend="bold">Note:</hi> If you need additional formatting options (e.g., double borders), please contact Mike to implement custom <att>rend</att> values.</p>
+               </div>
            </div>
            
            <!-- Add more docs here -->
@@ -927,13 +1537,13 @@
                                        <title>From Wilhelm&#160;Pfeffer&#160;&#160; 6&#160;November&#160;1881</title>
                                    </titleStmt>
                                    <publicationStmt>
-                                       <!-- -->
+                                       <![CDATA[<!-- -->]]>
                                    </publicationStmt>
                                    <notesStmt>
-                                       <!-- -->
+                                       <![CDATA[<!-- -->]]>
                                    </notesStmt>
                                    <sourceDesc>
-                                       <!-- -->
+                                       <![CDATA[<!-- -->]]>
                                    </sourceDesc>
                                </fileDesc>
                            </egXML>
@@ -1054,7 +1664,7 @@
                                    <availability status="restricted">
                                        <p>Available under license only</p>
                                    </availability>
-                                   <!-- ... -->
+                                   <![CDATA[<!-- ... -->]]>
                                </publicationStmt>
                            </egXML>
                        </exemplum>
@@ -1136,27 +1746,27 @@
                            <egXML xmlns="http://www.tei-c.org/ns/Examples">
                                <teiHeader>
                                    <fileDesc>
-                                       <!-- fileDesc contains information about the file, its source and
-                                           its published versions -->
+                                       <![CDATA[<!-- fileDesc contains information about the file, its source and
+                                           its published versions -->]]>
                                        <titleStmt/>
                                        <publicationStmt/>
                                        <seriesStmt/>
                                        <sourceDesc/>
                                    </fileDesc>
                                    <profileDesc>
-                                       <!-- profileDesc contains the bulk of the metadata in DCP transcriptions -->
+                                       <![CDATA[<!-- profileDesc contains the bulk of the metadata in DCP transcriptions -->]]>
                                        <correspDesc>
-                                           <!-- contains information about the correspondence exchange -->
+                                           <![CDATA[<!-- contains information about the correspondence exchange -->]]>
                                        </correspDesc>
                                        <abstract>
-                                           <!-- contains a summary of the item -->
+                                           <![CDATA[<!-- contains a summary of the item -->]]>
                                        </abstract>
                                        <textClass>
-                                           <!-- contains the categories assigned to a letter -->
+                                           <![CDATA[<!-- contains the categories assigned to a letter -->]]>
                                        </textClass>
                                    </profileDesc>
                                    <revisionDesc>
-                                       <!-- contains information about the changes made to the XML file -->
+                                       <![CDATA[<!-- contains information about the changes made to the XML file -->]]>
                                    </revisionDesc>
                                </teiHeader>
                            </egXML>
@@ -3048,60 +3658,60 @@
                                    <div type="letter">
                                        <div type="text">
                                            <opener>
-                                               <!-- contains the information printed at the top of the letter -->
+                                               <![CDATA[<!-- contains the information printed at the top of the letter -->]]>
                                            </opener>
                                            <div type="transcription">
-                                               <!-- the letter content goes here -->
+                                               <![CDATA[<!-- the letter content goes here -->]]>
                                            </div>
                                        </div>
                                        <div type="enclosure">
-                                           <!-- contains a transcription of a single enclosure. This div is optional 
-                                               and should only be included when the file letter has an enclosure -->
+                                           <![CDATA[<!-- contains a transcription of a single enclosure. This div is optional 
+                                               and should only be included when the file letter has an enclosure -->]]>
                                        </div>
                                        <div type="enclosure">
-                                           <!-- If there are multiple enclosures, multiple just create an additional
-                                               sibling div/@type="enclosure" for each one -->
+                                           <![CDATA[<!-- If there are multiple enclosures, multiple just create an additional
+                                               sibling div/@type="enclosure" for each one -->]]>
                                        </div>
                                        <div type="cdnotes">
-                                           <!-- This div is optional and only to be used if the file contains contains 
-                                               one or more 'cdnotes' -->
-                                           <note type="annotation"><!-- contents of first CD Note goes here--></note>
-                                           <note type="annotation"><!-- contents of second CD Note goes here--></note>
+                                           <![CDATA[<!-- This div is optional and only to be used if the file contains contains 
+                                               one or more 'cdnotes' -->]]>
+                                           <note type="annotation"><![CDATA[<!-- contents of first CD Note goes here-->]]></note>
+                                           <note type="annotation"><![CDATA[<!-- contents of second CD Note goes here-->]]></note>
                                        </div>
                                        <div type="annotations">
-                                           <!-- This div is optional and only to be used if the file contains contains 
-                                               one or more 'annotations' -->
-                                           <note type="annotation"><!-- contents of first annotation goes here--></note>
-                                           <note type="annotation"><!-- contents of second annotation goes here--></note>
+                                           <![CDATA[<!-- This div is optional and only to be used if the file contains contains 
+                                               one or more 'annotations' -->]]>
+                                           <note type="annotation"><![CDATA[<!-- contents of first annotation goes here-->]]></note>
+                                           <note type="annotation"><![CDATA[<!-- contents of second annotation goes here-->]]></note>
                                        </div>
                                    </div>
                                    <div type="translation">
-                                       <!-- div/@type='translation' is optional and need only be included
-                                           when a translation is being provided -->
+                                       <![CDATA[<!-- div/@type='translation' is optional and need only be included
+                                           when a translation is being provided -->]]>
                                        <div type="text">
                                            <opener>
-                                               <!-- contains a translation of the information printed at the
-                                                   top of the letter -->
+                                               <![CDATA[<!-- contains a translation of the information printed at the
+                                                   top of the letter -->]]>
                                            </opener>
                                            <div type="transcription">
-                                               <!-- the translated letter content goes here -->
+                                               <![CDATA[<!-- the translated letter content goes here -->]]>
                                            </div>
                                        </div>
                                        <div type="enclosure" subtype="other">
-                                           <!-- This element is optional. It is ONLY needed if you need to 
+                                           <![CDATA[<!-- This element is optional. It is ONLY needed if you need to 
                                                translate an enclosure.
                                                @subtype is required to indicate the type of content the
                                                enclosure contains: 'letter', 'translation' or 'other'
                                                If you need to translate enclosures, just create a
                                                div/@type="enclosure" for each one to be translated.
-                                           -->
+                                           -->]]>
                                        </div>
                                    </div>
                                    <div type="footnotes">
-                                       <!-- This div is optional and should only be included if the edited letter 
-                                           contains one or more notes -->
-                                       <note type="footnote" xml:id="foot-1000.f1"><!-- note content goes here --></note>
-                                       <note type="footnote" xml:id="foot-1000.f2"><!-- note content goes here --></note>
+                                       <![CDATA[<!-- This div is optional and should only be included if the edited letter 
+                                           contains one or more notes -->]]>
+                                       <note type="footnote" xml:id="foot-1000.f1"><![CDATA[<!-- note content goes here -->]]></note>
+                                       <note type="footnote" xml:id="foot-1000.f2"><![CDATA[<!-- note content goes here -->]]></note>
                                    </div>
                                </body>
                            </egXML>
@@ -3354,8 +3964,8 @@
                                <TEI xml:id="DCP-LETT-10000">
                                    <teiHeader>
                                        <fileDesc>
-                                           <!-- fileDesc contains information about the file, its source and
-                                               its published versions -->
+                                           <![CDATA[<!-- fileDesc contains information about the file, its source and
+                                           its published versions -->]]>
                                            <titleStmt/>
                                            <publicationStmt/>
                                            <seriesStmt/>
@@ -3363,20 +3973,20 @@
                                        </fileDesc>
                                        
                                        <profileDesc>
-                                           <!-- profileDesc contains the bulk of the metadata in DCP transcriptions -->
+                                           <![CDATA[<!-- profileDesc contains the bulk of the metadata transcriptions -->]]>
                                            <correspDesc>
-                                               <!-- contains information about the correspondence exchange -->
+                                               <![CDATA[<!-- contains information about the correspondence exchange -->]]>
                                            </correspDesc>
                                            <abstract>
-                                               <!-- contains a summary of the item -->
+                                               <![CDATA[<!-- contains a summary of the item -->]]>
                                            </abstract>
                                            <textClass>
-                                               <!-- contains the categories assigned to a letter -->
+                                               <![CDATA[<!-- contains the categories assigned to a letter -->]]>
                                            </textClass>
                                        </profileDesc>
                                        
                                        <revisionDesc>
-                                           <!-- contains information about the changes made to the XML file -->
+                                           <![CDATA[<!-- contains information about the changes made to the XML file -->]]>
                                        </revisionDesc>
                                    </teiHeader>
                                    
@@ -3385,69 +3995,69 @@
                                            <div type="letter">
                                                <div type="text">
                                                    <opener>
-                                                       <!-- contains the information printed at the top of the letter -->
+                                                       <![CDATA[<!-- contains the information printed at the top of the letter -->]]>
                                                    </opener>
                                                    <div type="transcription">
-                                                       <!-- the letter content goes here -->
+                                                       <![CDATA[<!-- the letter content goes here -->]]>
                                                    </div>
                                                </div>
                                                
                                                <div type="enclosure">
-                                                   <!-- contains a transcription of a single enclosure. This div is optional 
-                                                       and should only be included when the file letter has an enclosure -->
+                                                   <![CDATA[<!-- contains a transcription of a single enclosure. This div is optional 
+                                                   and should only be included when the file letter has an enclosure -->]]>
                                                </div>
                                                
                                                <div type="enclosure" subtype="other">
-                                                   <!-- If there are multiple enclosures, multiple just create an additional
-                                                       sibling div/@type="enclosure" for each one -->
-                                                   <!--  @subtype is required to indicate the type of content the
-                                                       enclosure contains: 'letter', 'translation' or 'other'
-                                                       If you need to translate enclosures, just create a
-                                                       div/@type="enclosure" for each one to be translated.
-                                                   -->
+                                                   <![CDATA[<!-- If there are multiple enclosures, multiple just create an additional
+                                                   sibling div/@type="enclosure" for each one -->]]>
+                                                   <![CDATA[<!--  @subtype is required to indicate the type of content the
+                                                   enclosure contains: 'letter', 'translation' or 'other'
+                                                   If you need to translate enclosures, just create a
+                                                   div/@type="enclosure" for each one to be translated.
+                                                   -->]]>
                                                </div>
                                                
                                                <div type="cdnotes">
-                                                   <!-- This div is optional and only to be used if the file contains contains 
-                                                       one or more 'cdnotes' -->
-                                                   <note type="annotation"><!-- contents of first CD Note goes here--></note>
-                                                   <note type="annotation"><!-- contents of second CD Note goes here--></note>
+                                                   <![CDATA[<!-- This div is optional and only to be used if the file contains contains 
+                                                   one or more 'cdnotes' -->]]>
+                                                   <note type="annotation"><![CDATA[<!-- contents of first CD Note goes here-->]]></note>
+                                                   <note type="annotation"><![CDATA[<!-- contents of second CD Note goes here-->]]></note>
                                                </div>
                                                
                                                <div type="annotations">
-                                                   <!-- This div is optional and only to be used if the file contains contains 
-                                                       one or more 'annotations' -->
-                                                   <note type="annotation"><!-- contents of first annotation goes here--></note>
-                                                   <note type="annotation"><!-- contents of second annotation goes here--></note>
+                                                   <![CDATA[<!-- This div is optional and only to be used if the file contains contains 
+                                                   one or more 'annotations' -->]]>
+                                                   <note type="annotation"><![CDATA[<!-- contents of first annotation goes here-->]]></note>
+                                                   <note type="annotation"><![CDATA[<!-- contents of second annotation goes here-->]]></note>
                                                </div>
                                            </div>
                                            
                                            <div type="translation">
-                                               <!-- div/@type='translation' is optional and need only be included
-                                                   when a translation is being provided -->
+                                               <![CDATA[<!-- div/@type='translation' is optional and need only be included
+                                               when a translation is being provided -->]]>
                                                <div type="text">
                                                    <opener>
-                                                       <!-- contains a translation of the information printed at the
-                                                           top of the letter -->
+                                                       <![CDATA[<!-- contains a translation of the information printed at the
+                                                       top of the letter -->]]>
                                                    </opener>
                                                    <div type="transcription">
-                                                       <!-- the translated letter content goes here -->
+                                                       <![CDATA[<!-- the translated letter content goes here -->]]>
                                                    </div>
                                                </div>
                                                <div type="enclosure">
-                                                   <!-- This element is optional. It is ONLY needed if you need to 
-                                                       translate an enclosure.
-                                                       If you need to translate enclosures, just create a
-                                                       div/@type="enclosure" for each one to be translated.
-                                                   -->
+                                                   <![CDATA[<!-- This element is optional. It is ONLY needed if you need to 
+                                                   translate an enclosure.
+                                                   If you need to translate enclosures, just create a
+                                                   div/@type="enclosure" for each one to be translated.
+                                                   -->]]>
                                                </div>
                                            </div>
                                            
                                            <div type="footnotes">
-                                               <!-- This div is optional and should only be included if the edited letter 
-                                                   contains one or more notes -->
-                                               <note type="footnote" xml:id="foot-10000.f1"><!-- note content goes here --></note>
-                                               <note type="footnote" xml:id="foot-10000.f2"><!-- note content goes here --></note>
+                                               <![CDATA[<!-- This div is optional and should only be included if the edited letter 
+                                               contains one or more notes -->]]>
+                                               <note type="footnote" xml:id="foot-10000.f1"><![CDATA[<!-- note content goes here -->]]></note>
+                                               <note type="footnote" xml:id="foot-10000.f2"><![CDATA[<!-- note content goes here -->]]></note>
                                            </div>
                                        </body>
                                    </text>
